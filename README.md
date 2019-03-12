@@ -10,7 +10,7 @@ Online Aptitude Test examination System With Django and MySQL as Database Sever
 .... other features are coming soon..
 
 # Wanna Help us Develop this Project ? 
--Follow these steps to setup Djngo into your system
+-Follow these steps to setup Django into your system
 1. Download and Install Python 3.7+ [Here](https://www.python.org/)
 2. Download and Install XAMPP for Database server [Here](https://www.apachefriends.org/index.html)
 3. Run Following Command to install Django 
