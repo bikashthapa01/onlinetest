@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{%load static%}
+		<title>BitsPlease - Welcome  </title>
+		<link rel="stylesheet" type="text/css" href="{% static '/users/style.css' %}">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Righteous" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+			<div class="site_header">
+			<div class="top_header">
+				<div class="site_branding">
+					<a href="{% url 'index' %}"><h1 class="site_title">BitsPlease</h1></a>
+				</div>
+				<div class="site_navigation">
+					<ul class="navigation_list">
+						<li class="navigation_list_item"><a href="{% url 'index' %}">Home</a></li>
+						<li class="navigation_list_item"><a href="#">Practice</a></li>
+						<li class="navigation_list_item"><a href="#">Events</a></li>
+						<li class="navigation_list_item"><a href="#"><button class="menu_btn">Take a Test</button></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		{%block content%}
+		<div class="site_messages">
+			<div class="messages">
+				<h1 class="main_content_title">Welcome To BitsPlease Online. <span>Learn and Solve Problems Together.</span></h1>
+				<button class="signin_btn btn"><a traget="__blank" href="{% url 'login' %}">Sign In</a></button> 
+				<button class="account_btn btn"><a href="{% url 'register'%}">Create New Account</a></button>
+			</div>
+		</div>
+		{%endblock%}
+	</div>
+</body>
+</html>

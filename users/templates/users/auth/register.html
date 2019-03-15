@@ -1,0 +1,18 @@
+{% extends 'users/index.html' %}
+{%block content%}
+	<div class="login">
+		<div class="login_form">
+			<h1 class="login_title">Create New Account</h1>
+			<form class="form_login" method="POST">
+				<input type="text" name="username" placeholder="Your USN">
+				<input type="password" name="password" placeholder="Password">
+				<input type="password" name="rpassword" placeholder="Confirm Password">
+				<span class="input_pair">
+					<input id="check" type="checkbox" name="applied_mod">
+					<label for="check">Apply For Moderator</label>
+				</span>
+				<input class="submit" type="submit" value="Register">
+			</form>
+		</div>
+	</div>
+{%endblock%}

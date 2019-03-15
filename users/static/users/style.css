@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+html {
+	font-size: 70%;
+}
+body {
+	background-image:linear-gradient(to bottom,#2b282859 50%,#000 80%),url(images/bg.png);
+	min-height: 100vh;
+	font-family: 'Lato', sans-serif;
+}
+button {
+	cursor: pointer;
+	padding: 1rem;
+	outline: none;
+	border-radius: 3px;
+	border:none;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5rem;
+
+}
+
+.container {
+	max-width: 90rem;
+	margin:auto;
+
+}
+.site_header {
+	padding:2rem;
+
+}
+.site_title {
+	font-size: 3rem;
+	font-family: 'Righteous', cursive;
+	color: #fff;
+}
+.top_header {
+	display: flex;
+	align-items: center;
+}
+.site_branding {
+	flex: 0 1 30%;
+}
+.site_navigation {
+	flex: 0 1 70%;
+}
+.menu_btn {
+	background-color: #4CAF50;
+    color: #fff;
+    font-weight: 500;
+}
+
+.navigation_list {
+	list-style-type: none;
+	float: right;
+}
+
+.navigation_list_item {
+	display: inline-block;
+	padding:1rem;
+}
+
+.navigation_list_item a {
+	text-decoration: none;
+	font-size: 1.7rem;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+
+}
+.navigation_list_item:hover {
+	background: #4CAF50;
+	border-radius: 3px;
+}
+.navigation_list_item:hover a {
+	color: #fff;
+}
+
+.main_content_title {
+	font-size: 3rem;
+	font-family: 'Righteous', cursive; 
+	color: #fff;
+}
+
+.site_messages {
+	position: relative;
+}
+.messages {
+	padding: 10rem;
+}
+.main_content_title {
+	font-size: 3rem;
+}
+.main_content_title span {
+	font-size: inherit;
+	display: block;
+}
+
+.messages button {
+	margin-top: 2rem;
+	margin-right: 1rem;
+}
+.btn {
+	background:green;
+	color: #fff;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 1.7rem;
+}
+.btn a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* login form styles */
+.login {
+	position: relative;
+	padding:20rem;
+}
+.login_form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.form_login {
+	display: flex;
+	flex-direction: column;
+}
+.login_title {
+	font-size: 3rem;
+	color: #fff;
+	padding: 1rem;
+	padding-left:0;
+	font-family: "Righteous",cursive;
+	text-align: center;
+}
+
+.form_login input {
+	display: block;
+	padding: 1rem;
+	font-size: 1.5rem;
+	border: none;
+	margin-bottom: 1rem;
+	border-radius: 3px;
+	font-family: inherit;
+}
+.submit {
+	text-align: center;
+	color: #fff;
+	background-color: green;
+}
+#check {
+	margin-right: 1rem;
+}
+.input_pair {
+	display: flex;
+	align-items: baseline;
+}
+
+.input_pair {
+	color: #fff;
+	font-size: 1.3rem;
+	font-family: inherit;
+}
+
