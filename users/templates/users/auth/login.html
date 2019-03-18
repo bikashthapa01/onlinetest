@@ -4,9 +4,11 @@
 		<div class="login_form">
 			<h1 class="login_title">Login</h1>
 			<form class="form_login" method="POST">
+				{% csrf_token %}
 				<input type="text" name="username" placeholder="Enter USN">
 				<input type="password" name="password" placeholder="Password">
 				<input class="submit" type="submit" value="Login" class="submit">
+				<label class="label_msg">New Here ? <a href="{% url 'register' %}"> Register </a></label>
 			</form>
 		</div>
 	</div>

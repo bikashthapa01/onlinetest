@@ -141,6 +141,7 @@ button {
 	padding-left:0;
 	font-family: "Righteous",cursive;
 	text-align: center;
+	margin-bottom: 3rem;
 }
 
 .form_login input {
@@ -167,7 +168,7 @@ button {
 
 .input_pair {
 	color: #fff;
-	font-size: 1.3rem;
+	font-size: 1.7rem;
 	font-family: inherit;
 	padding-bottom: 1rem;
 }
@@ -190,4 +191,24 @@ button {
 
 .input_pair p {
 	display: block;
+}
+.input_pair input {
+	margin-right: 1rem;
+}
+
+.label_msg {
+	color: #fff;
+}
+.label_msg a {
+	text-decoration: underline;
+	font-size: 1.5rem;
+}
+.errorlist {
+	list-style-type: none;
+}
+
+.errorlist li {
+	color: red;
+	font-size: 1.5rem;
+	padding-top:1rem;
 }
