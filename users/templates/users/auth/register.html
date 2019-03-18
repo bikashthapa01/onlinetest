@@ -1,7 +1,7 @@
 {% extends 'users/index.html' %}
 {%block content%}
-	<div class="login">
-		<div class="login_form">
+	<div class="login ">
+		<div class="login_form login_register">
 			<h1 class="login_title">Create New Account</h1>
 			<form class="form_login" method="POST">
 				{% csrf_token %}
@@ -14,6 +14,8 @@
 					<label for="check"> Apply For Moderator</label>
 				</span> -->
 				{{form.errors}}
+				{{form.first_name}}
+				{{form.last_name}}
 				{{form.username}}
 				{{form.password}}
 				{{form.rpassword}}

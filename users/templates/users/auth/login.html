@@ -2,7 +2,8 @@
 {%block content%}
 	<div class="login">
 		<div class="login_form">
-			<h1 class="login_title">Login</h1>
+			<h1 class="login_title login_t">Login</h1>
+			<strong>{{msg}}</strong>
 			<form class="form_login" method="POST">
 				{% csrf_token %}
 				<input type="text" name="username" placeholder="Enter USN">

@@ -1,0 +1,17 @@
+{% extends 'users/index.html'%}
+
+{%block content%}
+{% load static %}
+	<div class="success">
+			<img src="{% static 'users/images/success.png' %}" class="success_images">
+			<h1 class="success_title">Congratulation <span> Your Account is Created Successfully.</h1>
+			<h3> Hold Your Breath <span>You are Being Redirected to Login Page.</span></h3>
+			<script type="text/javascript">
+				function redirect(){
+					window.location.href="{% url 'login' %}"
+				}
+
+				setTimeout(redirect,3000);
+			</script>
+	</div>
+{% endblock %}

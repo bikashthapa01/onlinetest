@@ -123,11 +123,16 @@ button {
 	position: relative;
 	padding:20rem;
 }
+
 .login_form {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+}
+
+.login_register {
+	top: 70%;
 }
 
 .form_login {
@@ -211,4 +216,40 @@ button {
 	color: red;
 	font-size: 1.5rem;
 	padding-top:1rem;
+}
+.login_form {
+	width: 30%;
+}
+.login_form strong {
+	font-size: 1.7rem;
+    text-align: center;
+    color: red;
+    padding: 5rem;
+    padding-bottom: 0;
+}
+.success {
+	text-align: center;
+    padding: 10rem;
+
+}
+
+.success_images {
+	width: 30%;
+}
+.success_title {
+	color: #fff;
+	font-size: 2rem;
+}
+
+.success_title span {
+	display: block;
+}
+
+.success h3 {
+	color: orangered;
+}
+
+.success h3 span {
+	display: block;
+	color: skyblue;
 }

@@ -27,8 +27,13 @@
 		<div class="site_messages">
 			<div class="messages">
 				<h1 class="main_content_title">Welcome To BitsPlease Online. <span>Learn and Solve Problems Together.</span></h1>
-				<button class="signin_btn btn"><a traget="__blank" href="{% url 'login' %}">Sign In</a></button> 
-				<button class="account_btn btn"><a href="{% url 'register'%}">Create New Account</a></button>
+				{% if user.is_authenticated %}
+					<button class="signin_btn btn"><a traget="__blank" href="{% url 'logout' %}">Logout</a></button> 
+					<button class="account_btn btn"><a href="{% url 'dashboard'%}">Dashboard</a></button>
+				{% else %}
+					<button class="signin_btn btn"><a traget="__blank" href="{% url 'login' %}">Sign In</a></button> 
+					<button class="account_btn btn"><a href="{% url 'register'%}">Create New Account</a></button>
+				{% endif %}
 			</div>
 		</div>
 		{%endblock%}
