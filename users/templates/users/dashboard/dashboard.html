@@ -3,10 +3,43 @@
 <head>
 	<title>Dahboard | BitsPlease</title>
 	{%load static  %}
-		<link rel="stylesheet" type="text/css" href="{% static 'users/dashboard.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static '/users/dashboard.css' %}">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Righteous" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<h1>Welcome to Dashboard</h1>
-	<a href="{% url 'logout' %}">Logout</a>
+	<div class="dashboard_wrapper">
+		<div class="dashboard_header">
+			<div class="dashboard_brand">
+				{# Hamburger menu  #}
+				<h1 class="dashboard_title">BitsPlease</h1>
+			</div>
+
+			<div class="dashboard_user_menu">
+				<div class="user_info" id="user_info">
+					<img src="{% static 'users/images/user.png' %}" class="user_profile_image">
+					<h1 class="user_name">Bikash Thapa</h1>
+					<ul class="user_menu" id="user_menu">
+						<li class="user_menu_item"><a href="#">Edit Profile</a></li>
+						<li class="user_menu_item"><a href="#">Settings</a></li>
+						<li class="user_menu_item"><a href="#">Logout</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="dashboard_main_content">
+
+			<div class="dashboard_left_menu">
+				<h1>Side Menu</h1>
+			</div>
+
+			<div  class="dashboard_content">
+			<h1>Dashboard Content</h1>
+			</div>
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="{% static 'users/js/script.js' %}"></script>
 </body>
 </html>
