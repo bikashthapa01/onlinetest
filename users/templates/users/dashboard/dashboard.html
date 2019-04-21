@@ -22,7 +22,7 @@
 					<ul class="user_menu" id="user_menu">
 						<li class="user_menu_item"><a href="#">Edit Profile</a></li>
 						<li class="user_menu_item"><a href="#">Settings</a></li>
-						<li class="user_menu_item"><a href="#">Logout</a></li>
+						<li class="user_menu_item"><a href="{% url 'logout' %}">Logout</a></li>
 					</ul>
 				</div>
 			</div>
@@ -33,10 +33,17 @@
 
 			<div class="dashboard_left_menu">
 				{% block dashboard_menu %}
-					<h1> Admin Side Menu</h1>
+					<ul class="admin_menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Exams</a></li>
+						<li><a href="#">Sujects</a></li>
+						<li><a href="#">Questions</a></li>
+						<li><a href="#">Analytics</a></li>
+						<li><a href="#">Moderators</a></li>
+						<li><a href="#">Settings</a></li>
+					</ul>
 				{% endblock %}
 			</div>
-
 			<div  class="dashboard_content">
 			{% block dashboard_content%}
 				<h1>Admin Dashboard</h1>

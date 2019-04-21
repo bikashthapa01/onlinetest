@@ -3,11 +3,14 @@ Online Aptitude Test examination System With Django and MySQL as Database Sever
 
 # Goals 
 
-1. Authentication for User (With Usn) (done..)
-2. Authorization level for User ( Admin | Modrator | User ) 
-3. Multiple Choice Questions ( Added my Admin or Mod ) 
+1. Authentication for User (With Usn) (Completed)
+2. Authorization level for User ( Admin | Modrator | User )  (completed)
+3. Multiple Choice Questions ( Added by Admin or Mod ) 
 4. Ranking among Students based on Marks 
-.... other features are coming soon..
+5. Answer with Explanations 
+6. 
+7. 
+8.
 
 # Wanna Help us Develop this Project ? 
 -Follow these steps to setup Django into your system

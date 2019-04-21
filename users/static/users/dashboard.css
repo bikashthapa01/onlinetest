@@ -59,7 +59,7 @@ body {
 	align-items: start;
 }
 .dashboard_left_menu {
-	padding: 5rem;
+	padding: 3rem;
 	background:#fff;
 	height: 100vh;
 }
@@ -91,4 +91,25 @@ body {
 }
 .display {
 	display: block;
+}
+.admin_menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.admin_menu li  {
+	padding: 2rem;
+
+}
+
+.admin_menu li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 1.5rem;
+	font-family: "Righteous",cursive;
+	text-transform: uppercase;
+}
+.admin_menu li:hover {
+	background: #f7f7f7;
 }
