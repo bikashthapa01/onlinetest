@@ -28,17 +28,23 @@
 			</div>
 		</div>
 
-		<div class="dashboard_main_content">
+		
+			<div class="dashboard_main_content">
 
 			<div class="dashboard_left_menu">
-				<h1>Side Menu</h1>
+				{% block dashboard_menu %}
+					<h1> Admin Side Menu</h1>
+				{% endblock %}
 			</div>
 
 			<div  class="dashboard_content">
-			<h1>Dashboard Content</h1>
+			{% block dashboard_content%}
+				<h1>Admin Dashboard</h1>
+			{% endblock %}
 			</div>
 			
 		</div>
+		
 	</div>
 	<script type="text/javascript" src="{% static 'users/js/script.js' %}"></script>
 </body>

@@ -35,7 +35,12 @@ def registerView(request):
 
 @login_required
 def dashboard(request):
-	return render(request,'users/dashboard/dashboard.html')
+	if request.user.is_staff:
+		return render(request,'users/dashboard/dashboard.html')
+	else:
+		return render(request,'users/dashboard/student_dashboard.html')
+
+	
 
 
 def success(request):
