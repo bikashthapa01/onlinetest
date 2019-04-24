@@ -1,0 +1,34 @@
+{% extends 'users/dashboard/dashboard.html'%}
+
+{% block dashboard_content %}
+	 <div class="add_content ">
+	 	<h1 class="content_main_title">{%block block_title%} Add New Exam {%endblock%}</h1>
+	 	<div class="add_forms_wrapper">
+	 		<code>{{msg}}</code>
+	 		<form class="add_forms" method="POST">
+	 			{% csrf_token %}
+
+	 			{% block add_forms %}
+		 			<p>
+		 				<label>Choose Subject: </label>
+		 				{{form.subject}}
+		 			</p>
+		 			<p>
+		 				<label>Exam Name: </label>
+		 				{{form.name}}
+		 			</p>
+
+		 			<div class="select_questions" style="padding:1rem;">
+		 				<label>Select Questions: </label>
+		 				<p>List of Questions</p>
+		 			</div>
+		 			<div class="btn_div">
+		 				<button>Save Exam</button>
+		 			</div>
+	 			{% endblock %}
+	 		</form>
+	 	
+	 	</div>
+	 </div>
+
+{% endblock %}

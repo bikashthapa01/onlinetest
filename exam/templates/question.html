@@ -1,7 +1,13 @@
-{% extends 'users/dashboard/dashboard.html'%}
+{% extends 'exam.html'%}
 
-{% block dashboard_content %}
+{% block block_title %} 
+	All Questions
+{%endblock%}
 
-	 <h1>Add New Question </h1>
-
+{% block add_btn %}
+	<a href="{% url 'add_question' %}"><button class="btn_add">Add</button></a>
 {% endblock %}
+
+{% block all_content %}
+	<h1>List Of Questions </h1>
+{%endblock%}

@@ -34,10 +34,10 @@
 			<div class="dashboard_left_menu">
 				{% block dashboard_menu %}
 					<ul class="admin_menu">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Exams</a></li>
-						<li><a href="#">Subjects</a></li>
-						<li><a href="#">Questions</a></li>
+						<li><a href="{% url 'dashboard' %}">Home</a></li>
+						<li><a href="{% url 'all_exam' %}">Exams</a></li>
+						<li><a href="{% url 'all_subject' %}">Subjects</a></li>
+						<li><a href="{% url 'all_question' %}">Questions</a></li>
 						<li><a href="#">Analytics</a></li>
 						<li><a href="#">Moderators</a></li>
 						<li><a href="#">Settings</a></li>

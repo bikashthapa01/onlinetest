@@ -1,0 +1,21 @@
+{% extends 'add_exam.html'%}
+
+{%block block_title%} Add New Subject {%endblock%}
+
+{%block add_forms%}
+
+	<p>
+		<label>Name : </label>
+		{{form.name}}
+	</p>
+	<p>
+		<label>Description: </label>
+		{{form.description}}
+	</p>
+	<p>
+		<label>Cover Image: </label>
+		{{form.cover_image}}
+	</p>
+	
+	<button>Save</button>
+{%endblock%}

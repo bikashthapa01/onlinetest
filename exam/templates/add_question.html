@@ -1,0 +1,47 @@
+{% extends 'add_exam.html'%}
+
+{%block block_title%} Add New Question {%endblock%}
+
+{%block add_forms%}
+
+	<p>
+		<label>Question Statments: </label>
+		{{form.statments}}
+	</p>
+	<div class="options">
+		<h4>Options: </h4>
+
+		<p>
+			<label>A : </label>
+			{{form.op_A}}
+		</p>
+		<p>
+			<label>B : </label>
+			{{form.op_B}}
+		</p>
+		<p>
+			<label>C : </label>
+			{{form.op_C}}
+		</p>
+		<p>
+			<label>D : </label>
+			{{form.op_D}}
+		</p>
+	</div>
+	<p>
+		<label>Correct Option: </label>
+		{{form.correct_op}}
+	</p>
+
+	<p>
+		<label>Subject: </label>
+		{{form.subject}}
+
+	</p>
+
+	<p>
+		<label>Mark: </label>
+		{{form.mark}}
+	</p>
+	<button>Save</button>
+{%endblock%}

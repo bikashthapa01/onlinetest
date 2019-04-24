@@ -66,7 +66,7 @@ body {
 .dashboard_content {
 	padding: 5rem;
 	flex: 1;
-	background:#a3c4d4a8;
+	
 }
 
 .user_menu {
@@ -112,4 +112,93 @@ body {
 }
 .admin_menu li:hover {
 	background: #f7f7f7;
+}
+
+
+/* admin content styles */
+
+.all_content {
+	
+
+}
+.exam {
+
+}
+.all_content_head {
+	background: #fff;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content_main_title {
+	font-size: 2rem;
+	font-family: "Righteous",cursive;
+	text-transform: uppercase;
+
+}
+.extra_options {
+	display: flex;
+	align-items: center;
+}
+
+button {
+	padding: 1rem;
+    border: none;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+input {
+	padding: 1rem;
+	font-size: 1.5rem;
+}
+.btn_add {
+	margin-right: 1rem;
+    background: #009688;
+    color: #fff;
+    border-radius: 5px;
+}
+.all_content_body {
+	padding: 1rem;
+	font-size: 1.7rem;
+}
+.add_content  {
+	padding: 2rem;
+	background: #fff;
+}
+
+.add_content h1 {
+	border-bottom: 1px solid red;
+    padding-bottom: 1rem;
+}
+.add_forms_wrapper {
+	padding-top: 2rem;
+}
+.add_forms p {
+	padding: 1rem;
+	display: flex;
+}
+.add_forms label {
+	font-size: 1.7rem;
+    padding-right: 3rem;
+}
+.add_forms input {
+	padding: 1rem;
+	font-size: 1.7rem;
+}
+.btn_div {
+	padding: 1rem;
+}
+.add_forms button {
+	font-size: 1.5rem;
+	background:#009688;
+	color: #fff; 
+	border-radius: 5px;
+}
+.options {
+	padding: 1rem;
+}
+.options h4 {
+	font-size: 2rem;
 }

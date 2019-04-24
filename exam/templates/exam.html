@@ -2,6 +2,27 @@
 
 {% block dashboard_content %}
 
-	 <h1>Add New Exam </h1>
+	 <div class="all_content exam">
+	 	<div class="all_content_head">
+	 		<h1 class="content_main_title">
+	 			{% block block_title %} All Exams {% endblock %}
+	 		</h1>
+		 	<div class="extra_options">
+		 		{% block add_btn %} <a href="{% url 'add_exam' %}"><button class="btn_add">Add</button></a> {% endblock %}
+		 		<form class="search_form">
+		 			<input type="text" name="search_term" placeholder="Search">
+		 			<button>GO</button>
+		 		</form>
+		 	</div>
+	 	</div>
+
+
+	 	<div class="all_content_body">
+	 		{% block all_content %}
+	 			<h1>List of Exams</h1>
+	 		{% endblock %}
+	 	</div>
+
+	 </div>
 
 {% endblock %}
