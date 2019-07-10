@@ -18,7 +18,7 @@
 			<div class="dashboard_user_menu">
 				<div class="user_info" id="user_info">
 					<img src="{% static 'users/images/user.png' %}" class="user_profile_image">
-					<h1 class="user_name">Bikash Thapa</h1>
+					<h1 class="user_name">{{user.first_name}} {{user.last_name}}</h1>
 					<ul class="user_menu" id="user_menu">
 						<li class="user_menu_item"><a href="#">Edit Profile</a></li>
 						<li class="user_menu_item"><a href="#">Settings</a></li>
